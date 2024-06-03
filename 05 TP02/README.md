@@ -6,7 +6,7 @@
 •	Dans WishController, dans la méthode list :   
   o	Récupérer les idées avec la méthode $repo->findBy()  
   o	Passer les idées à Twig avec le 2e argument de la fonction render()  
-  
+    
 •	Dans list.html.twig :  
   o	utiliser une boucle pour afficher les idées une par une  
   o	ajouter une balise <a> autours de chaque idée, menant à la page détails  
