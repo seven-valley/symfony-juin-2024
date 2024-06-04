@@ -4,7 +4,10 @@
   
 
 ### ETAPE 1 Générer le formulaire
+```
 symfony console make:form Wish 
+```
+
 ```php
  $builder
             ->add('title')
