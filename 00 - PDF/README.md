@@ -53,3 +53,9 @@ symfony console doctrine:shema:update --force
  ```
 symfony console d:s:u -f
 ```
+
+# Création de formulaire
+```
+symfony console make:form Film
+```
+
