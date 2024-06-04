@@ -17,7 +17,7 @@ __mardi 4 juin__
 - Afficher une liste de films
 - Afficher un film dans une page avec un **id**
 - Ajouter un film avec EntityManager  
-:movie_camera:**vidéo 01 demo création Entity avec Doctrine**
+### :movie_camera: vidéo 01 demo création Entity avec Doctrine
 ## :mortar_board: TP 02 Idées voyages 
 - Créer une Entity Wish
 - Créer la table wish en base avec ( d:s:u -f)
