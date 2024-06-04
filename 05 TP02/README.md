@@ -1,5 +1,5 @@
 •	Configurer la base de données dans le fichier .env.local  
-•	Créer la base de données avec php bin/console   doctrine:database:create  
+•	Créer la base de données avec **phpMyAdmin**
 •	S'assurer que l'interclassement de la base de donnée est en UTF8 dans PHPMyAdmin  
 •	Générer l'entité Wish avec make dans l'invite de commande, avec les propriétés demandées  
 •	Mettre à jour la base de données avec doctrine:schema:update –force
