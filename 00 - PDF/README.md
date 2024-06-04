@@ -23,3 +23,33 @@ On lance le serveur :
 ```
 symfony server:start
 ```
+
+# Vider le cache
+```
+symfony console cache:clear
+```
+```
+symfony console c:c
+```
+
+# Afficher les routes
+```
+symfony console debug:router
+```
+
+# Créer une Entity 
+```
+symfony console make:entity
+```
+Autre possibilité
+```
+symfony console make:entity Film
+```
+
+# Créer une table en SQL à partires des Entities
+ ```
+symfony console doctrine:shema:update --force
+```
+ ```
+symfony console d:s:u -f
+```
