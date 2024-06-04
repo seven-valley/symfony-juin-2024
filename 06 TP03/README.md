@@ -6,6 +6,7 @@ symfony console make:form Wish
 - Mettre en place le formulaire pour Ajouter Wish
 
 **ajouter boostrap 5 aux formutlaires**  
+    
 config>pakages> twig.yaml  
   
 ajouter cette ligne :  
