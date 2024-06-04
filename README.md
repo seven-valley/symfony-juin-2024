@@ -5,7 +5,7 @@ __lundi 3 juin__
 - Création d'un controller
 - Twig afficher des variables
 - Twig afficher un tableau
-## TP 01 Idées voyages
+## TP 01 Idées voyages :mortar_board:
 - Créer plusieurs routes
 - Afficher un tableau avec Twig
 
@@ -16,9 +16,9 @@ __mardi 4 juin__
 - Créer une Entity
 - Afficher une liste de films
 - Afficher un film dans une page avec un **id**
-- Ajouter un film avec EntityManager
-**vidéo 01 demo création Entity avec Doctrine**
-## TP 02 Idées voyages
+- Ajouter un film avec EntityManager  
+:movie_camera:**vidéo 01 demo création Entity avec Doctrine**
+## TP 02 Idées voyages :mortar_board:
 - Créer une Entity Wish
 - Créer la table wish en base avec ( d:s:u -f)
 - Afficher la page avec la liste des idées (wish)
