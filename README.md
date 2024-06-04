@@ -1,4 +1,5 @@
 # JOUR 1
+__lundi 3 juin__
 - Créer un projet symfony 7
 - Prise en main des maker
 - Création d'un controller
@@ -10,6 +11,7 @@
 
 
 # JOUR 2
+__mardi 4 juin__
 - Démo Doctrine
 - Créer une Entity
 - Afficher une liste de films
