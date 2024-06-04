@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello WishController!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+</style>
+
+<div class="container">
+<h1>Détail</h1>
+<h2>{{wish.title}}</h2>
+<em>{{wish.author}}</em>
+<p>{{wish.description}}</p>
+<strong>{{wish.createdAt|date('d-m-Y')}}</strong>
+
+</div>
+{% endblock %}
