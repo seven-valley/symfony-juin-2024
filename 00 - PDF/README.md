@@ -46,7 +46,7 @@ Autre possibilité
 symfony console make:entity Film
 ```
 
-# Créer une table en SQL à partires des Entities
+# Créer une table en SQL à partir des Entities
  ```
 symfony console doctrine:shema:update --force
 ```
