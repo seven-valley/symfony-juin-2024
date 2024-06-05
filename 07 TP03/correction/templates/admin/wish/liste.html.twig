@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello WishController!{% endblock %}
+
+{% block body %}
+
+<div class="container">
+<h1>Idées de voyages</h1>
+{% for type, messages in app.session.flashbag.all() %}
+    {% for message in messages %}
+       
+      
+            <div class="alert alert-{{type}}" role="alert">
+            <i class="fa fa-info-circle"></i>
+           &nbsp; {{message}}</div>
+        
+    {% endfor %}
+{% endfor %}
+<br><br>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Titre</th>
+            <th>date</th>
+            <th colspan="2">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+    {% for w in wishes %}
+    <tr>
+    <td>{{loop.index}}</td>
+    <td>{{w.title}}</td>
+    <td>{{w.createdAt|date('d-m-Y')}}</td>
+    <td>
+    <a href="{{path ('admin_wish_modifier',{'id':w.id})}}" class="btn btn-primary">
+    <i class="fa fa-edit"></i></a>
+    </td>
+    <td>
+    <a href="#" class="btn btn-danger">
+    <i class="fa fa-trash"></i></a>
+    </td>
+    </tr>
+    {% endfor %}
+    
+    </tbody>
+</table>
+<a href="{{path ('admin_wish_ajouter')}}" class="btn btn-success">
+    <i class="fa-solid fa-plus"></i></a>
+
+</div>
+{% endblock %}
