@@ -7,8 +7,8 @@
     - modfier{id}  
 - dans twig : **main/home.html.twig**
 
-- créer une **Entity** : **Personne**
-- mettre ne place des flash Message :
+- créer une **Entity** : **Personne**  
+- mettre ne place des flash Message :  
 ajouter  : success  
 modifier : primary  
 enlever  : danger  
