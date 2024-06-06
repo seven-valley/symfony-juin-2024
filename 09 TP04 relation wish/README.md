@@ -17,3 +17,10 @@ liste des catégories
 - Voyage pour plus tard
 - Voyage improbable
 - Voyage avec les copains
+
+
+la maquette :
+https://seven-valley.github.io/my-bucket-list-template/
+
+le code html de la maquette:
+https://github.com/seven-valley/my-bucket-list-template
