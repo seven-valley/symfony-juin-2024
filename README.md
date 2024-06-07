@@ -25,6 +25,54 @@ __mardi 4 juin__
 - Utiliser **findBy** pour afficher que les isValid et par date DESC
 - Afficher un page details pour notre wish avec **id**
 
+- Démo du C de CRUD CREATE
+- Mise en place de la route pour créer un Film
+- Démo Création du Formulaire  FilmType
+- Mise en place d'un formulaire dans twig
+
+## :mortar_board: TP 03 Idées voyages 
+- Ajouter un Wish
+- Création de la route
+- Création du formulaire wishType
+- création du fichier twig
+
+# JOUR 3
+__mercredi 5 juin__
+## :mortar_board: TP 04 VIP Cocktail
+- Création de l'Entity Personne
+- Création du controller
+- Création du formulaire
+- creation de la page twig
+- Afficher la liste des personnes
+- Ajouter une personne
+
+
+# JOUR 4
+__jeudi 6 juin__
+- Création d'une 2eme Entity Categ pour les catégories
+- Mise en place d'une relation **oneToMany**
+- Afficher un menu deroulant dans le formulaire ('choice_label')
+- Découverte de la commande **"interdite"** make:crud Entity
+
+## :mortar_board: TP 05 Idées voyages 
+- Création d'une 2eme Entity Categ pour les catégories
+- Mise en place d'une relation **oneToMany**
+- Afficher un menu deroulant dans le formulaire ('choice_label')
+- Afficher les Idées en fonction des catégory sur la home page
+- Faire le CRUD de Categ
+
+# JOUR 5
+__vendredi 7 juin__
+**Mise en place de l'Authentification**
+- Création de l'Entity User avec **make:user**
+- Création de la page login avec **make:auth**
+- Création du formulaire d'ajout de USER avec encodage du mot de passe **make:registration-form**
+- Mise en place du fichier **security.yaml**
+- Récupérer sur twig les informations de l'utilisateur NOM / Admin ou user
+- Filtrer sur twig si la personne est ADMIN : les liens
+
+
+
 
 # Les raccourcis VS CODE
 
