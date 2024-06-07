@@ -1,0 +1,14 @@
+
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ titre}}| {{ parent() }}{% endblock %}
+
+{% block body %}
+<h1>{{titre}}</h1>
+<div class="col-4">
+Hello {{app.user.email}}
+ {% if is_granted("ROLE_ADMIN") %}
+ ADMIN
+ {% endif %}
+</div>
+{% endblock %}
