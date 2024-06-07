@@ -70,6 +70,18 @@ __vendredi 7 juin__
 - Mise en place du fichier **security.yaml**
 - Récupérer sur twig les informations de l'utilisateur NOM / Admin ou user
 - Filtrer sur twig si la personne est ADMIN : les liens
+## :mortar_board: TP 06 Idées voyages avec Back Office et Auth.
+- Ajouter une Entity User
+- Mettre en place le login
+- Securiser les routes du back Office
+- ajouter un Utilisateur
+
+
+# Semaine 2
+- Mettre en place le **manyToMany** avec le Team Builder  
+- Ajouter le plugin **select2** pour un manyToMany  
+- Mettre en place des requetes **AJAX** avec Symfony avec Vanilla JS et fetch
+- Créer une **API** avec Symfony et la tester avec POSTMAN  
 
 
 
