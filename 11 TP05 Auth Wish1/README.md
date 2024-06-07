@@ -20,3 +20,4 @@ base.html.twig
 - Mettre en place le login avec pseudo ou email 
 - Mettre le nom de l'utilsateur dans l'ajout d'un Wish   
 
+- Saisir 2 fois le mot de passe dans l'ajout d'un utilisateur
