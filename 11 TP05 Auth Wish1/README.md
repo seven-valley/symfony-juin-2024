@@ -11,6 +11,6 @@ avec **/admin**
 - Préfixer les routes du back office  role_user (ajouter un Wish , ajouter une Categ) 
 avec **/profile**  
 
-Créer une autre template pour admin :
+Créer une autre template pour admin :  
 base.html.twig  
 admin.html.twig
