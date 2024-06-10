@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Film{% endblock %}
+
+{% block body %}
+    <h1>Create new Film</h1>
+    <div class="container">
+    <div class="col-4">
+   
+    {{ include('film/_form.html.twig') }}
+
+    <a href="{{ path('app_film_index') }}" >back to list</a>
+           </div>
+    </div>
+          
+          <script>
+      $(document).ready(function() {
+    $('#film_categs').select2();
+});
+        </script>
+{% endblock %}

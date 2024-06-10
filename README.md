@@ -80,8 +80,15 @@ __vendredi 7 juin__
 # Semaine 2
 - Mettre en place le **manyToMany** avec le Team Builder  
 - Ajouter le plugin **select2** pour un manyToMany  
-- Mettre en place des requetes **AJAX** avec Symfony avec Vanilla JS et fetch
+- La Validation de formulaire  
+- les fixures 
+- query builder ?? quezako
+- Mettre en place des requetes **AJAX** avec Symfony avec Vanilla JS et fetch  
 - Créer une **API** avec Symfony et la tester avec POSTMAN  
+- Mettre en place React avec Symfony
+
+
+
 
 
 
