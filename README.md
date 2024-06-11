@@ -99,7 +99,15 @@ __vendredi 7 juin__
 - Supprimer une Personne
 - Ajouter une personne de la liste des employées dans une equipe
 
+# JOUR 7
+- mise en place de requete AJAX
+- Utilisation de JavaScript avec twig 
 
+## :mortar_board: TP 09 Le Créateur de cocktails
+- mettre en place une requete AJAX pour récupérer la liste des cocktails
+- Filtre Javascript sur les couleur :
+ - Utiliser javaScript sur la balise <select> 
+ pour filtrer les cocktail en fct des couleur
 
 
 
