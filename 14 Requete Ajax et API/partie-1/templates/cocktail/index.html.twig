@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Cocktail index{% endblock %}
+
+{% block body %}
+    <h1>Cocktail index</h1>
+<div class="container">
+<div class="col-6">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom</th>
+                <th>Fruit</th>
+                <th>couleur</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for cocktail in cocktails %}
+            <tr>
+                <td>{{ cocktail.id }}</td>
+                <td>{{ cocktail.nom }}</td>
+                <td>{{ cocktail.fruit.nom }}</td>
+                <td>{{ cocktail.fruit.couleur.nom }}</td>
+                <td>
+                    <a href="{{ path('app_cocktail_show', {'id': cocktail.id}) }}">show</a>
+                    <a href="{{ path('app_cocktail_edit', {'id': cocktail.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="3">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_cocktail_new') }}">Create new</a>
+    </div>
+</div>
+{% endblock %}

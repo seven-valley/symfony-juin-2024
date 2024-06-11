@@ -94,6 +94,17 @@ Reconstruire le menu deroulant des fruits en JavaScript
 
 
 # mise en place des fixure
+
+https://symfony.com/bundles/DoctrineFixturesBundle/current/index.html  
+**installer la recette**
+```
+composer require --dev doctrine/doctrine-fixtures-bundle
+```
+
+**Purger la data base et charger les fixtures**
+```
+symfony console d:f:l   
+```
 ```php
 <?php
 namespace App\DataFixtures;
