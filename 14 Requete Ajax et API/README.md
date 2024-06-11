@@ -92,7 +92,7 @@ class Personne
     /**
      * @var Collection<int, Equipe>
      */
-    #[Ignore]
+    #[Ignore] // <----- on ajoute ICI
     #[ORM\ManyToMany(targetEntity: Equipe::class, inversedBy: 'personnes')]
     private Collection $equipes;
 ```
