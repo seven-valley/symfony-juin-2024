@@ -35,9 +35,16 @@ go();
   ![tp](tp.png)
    
 Créer 3 Entity  
-- Cocktail  
-- Fruit  
-- Couleur  
+- **Cocktail**  
+  - nom
+  - fruit
+    
+- **Fruit**  
+  - nom
+  - couleur  
+
+- **Couleur**
+  - nom    
 
 ![diagramme](diagramme.webp)
   
