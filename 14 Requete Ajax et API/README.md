@@ -88,8 +88,8 @@ go();
         console.log(this.value)
       }
     </script>
-    ```
-
+    
+```
 
 ## Bloquer circular reference
 **#[Ignore]**
