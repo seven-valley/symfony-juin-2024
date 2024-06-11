@@ -7,9 +7,12 @@ Film
  - isWatched   
 
 ## les routes
-
- <code>POST</code> <code><b>/</b>api<b>/</b>personne</code> <code> ajouter une personne
- 
+<details>
+ <code>POST</code> <code><b>/</b>api<b>/</b>personne</code>  Ajouter une personne  
+ ##### Parameters
+ `{"code":"400","message":"Bad Request"}` 
+ ##### Responses
+</details>
 
 
 ## Méthode POST
