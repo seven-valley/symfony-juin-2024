@@ -1,6 +1,6 @@
 # Mise en place de requete Ajax avec Symfony
 
-## Créer un route qui retourn du JSON
+## Créer un route qui retourne du JSON
 ```php
  #[Route('/personne/liste2', name: 'personne_liste_2')]
     public function liste2(PersonneRepository $repo): Response
