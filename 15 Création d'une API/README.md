@@ -8,10 +8,10 @@ Film
 
 ## les routes
 
- <code>POST</code> <code><b>/</b>api<b>/</b>personne</code>  Ajouter une personne   `{"code":"400","message":"Bad Request"}` 
-
-
-
+ <code>POST</code> <code><b>/</b>api<b>/</b>film</code>  Ajouter un film   `{"title":"The Matrix","annee":"1999"}
+<code>GET</code> <code><b>/</b>api<b>/</b>film</code> Afficher la liste   `{"title":"The Matrix","annee":"1999"}
+<code>PUT</code> <code><b>/</b>api<b>/</b>film<b>/{id}</b></code> Modifier un film `{"title":"The Matrix","annee":"2009"}
+<code>DELETE</code> <code><b>/</b>api<b>/</b>film<b>/{id}</b></code> Effacer un film
 
 ## Méthode POST
 ### Ajouter un film 
