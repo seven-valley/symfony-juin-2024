@@ -199,3 +199,36 @@ class AppFixtures extends Fixture
     }
 }
 ```
+
+### correction :
+```html
+<script>
+    let fruits = [];
+    function showFruit(couleurId){
+        let selectFruit = document.getElementById('cocktail_fruit');
+        // vider le menu deroulant
+        selectFruit.innerHTML='';
+        for  (let fruit of fruits){
+            if(couleurId == fruit.couleur.id){
+             let option = document.createElement('option'); // <option></option>
+          option.innerHTML = fruit.nom; // <option>Pomme</option>
+          option.setAttribute('value', fruit.id); // <option value="1">test</option>
+          selectFruit.appendChild(option);
+          }
+        }
+    }
+    async function goFruit(){
+        let response = await fetch('http://localhost:8000/cocktail/api/fruits');
+        fruits = await response.json();
+        showFruit(document.getElementById('cocktail_couleur').value);
+    }
+    goFruit();
+    
+    
+    document.getElementById('cocktail_couleur').onchange = async  function (){
+        let couleurId= this.value;
+        // reconstruire le menu de fruits <select>
+        showFruit(couleurId)
+      }
+    </script>
+  ```

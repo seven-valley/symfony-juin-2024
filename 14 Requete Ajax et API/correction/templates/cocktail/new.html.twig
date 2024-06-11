@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Cocktail{% endblock %}
+
+{% block body %}
+
+
+ <div class="container">
+<div class="col-6">
+    <h1>Create new Cocktail</h1>
+   {{ form_start(form) }}
+    {{ form_widget(form) }}
+    <button class="btn">{{ button_label|default('Save') }}</button>
+{{ form_end(form) }}
+
+
+    <a href="{{ path('app_cocktail_index') }}">back to list</a>
+    </div>
+    </div>
+    <script>
+    let fruits = [];
+    function showFruit(couleurId){
+        let selectFruit = document.getElementById('cocktail_fruit');
+        // vider le menu deroulant
+        selectFruit.innerHTML='';
+        for  (let fruit of fruits){
+            if(couleurId == fruit.couleur.id){
+             let option = document.createElement('option'); // <option></option>
+          option.innerHTML = fruit.nom; // <option>Pomme</option>
+          option.setAttribute('value', fruit.id); // <option value="1">test</option>
+          selectFruit.appendChild(option);
+          }
+        }
+    }
+    async function goFruit(){
+        let response = await fetch('http://localhost:8000/cocktail/api/fruits');
+        fruits = await response.json();
+        showFruit(document.getElementById('cocktail_couleur').value);
+    }
+    goFruit();
+    
+    
+    document.getElementById('cocktail_couleur').onchange = async  function (){
+        let couleurId= this.value;
+        // reconstruire le menu de fruits <select>
+        showFruit(couleurId)
+      }
+    </script>
+{% endblock %}
