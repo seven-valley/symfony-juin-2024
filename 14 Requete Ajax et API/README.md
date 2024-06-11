@@ -32,14 +32,14 @@ go();
 
 ## le Créateur de Coktail
   
-  ![tp](/tp.png)
+  ![tp](tp.png)
    
 Créer 3 Entity  
 - Cocktail  
 - Fruit  
 - Couleur  
 
-![diagramme](/diagramme.webp)
+![diagramme](diagramme.webp)
   
 ### Objectif
 - Ajouter le menu deroulant des couleurs
