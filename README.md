@@ -78,6 +78,32 @@ __vendredi 7 juin__
 
 
 # Semaine 2
+
+# JOUR 6
+- création d'une relation ManyToMany sur l'entité Category
+- utilisation d'un plugin select 2 pour le menu dans le formulaire 
+
+## :mortar_board: TP 07 Créé des cocktail avec des ingrédients
+- Créer une entity Cocktail
+- Créer une entity Ingrédient
+- Relier les Entity avec manytoMany
+- installer select2 pour ajouter des ingrédients
+
+## :mortar_board: TP 08 Le Team Builder
+- Créer une Entity Equipe
+- Créer une Entity Personne
+- Relier les Entity avec manyToMany
+- Ajouter une Equipes
+- Ajouter une Personne dans une Equipes
+- Supprimer une Equipe
+- Supprimer une Personne
+- Ajouter une personne de la liste des employées dans une equipe
+
+
+
+
+
+# Semaine 2
 - Mettre en place le **manyToMany** avec le Team Builder  
 - Ajouter le plugin **select2** pour un manyToMany  
 - La Validation de formulaire  
