@@ -31,66 +31,62 @@ go();
 ```
 ## Re créer la balise select
 ```html
- <h1>Demo Ajax</h1>
+  <h1>Demo Ajax</h1>
     <div id="demo">ici ...</div>
-    <select name="personnes" id="personnes">
-    </select>
+    <select name="personnes" id="personnes"></select>
     <script>
-        // ajouter une balise p
-       // <p>test</p>   
-       // <p>demo</p>   
-       let depot = document.getElementById('demo');
-       // vider
-       depot.innerHTML='';
-       // construire la balise <p>
-       let p = document.createElement('p'); // <p></p>
-       p.innerHTML='test'; // <p>test</p>
-       // ajouter la balise dans la balise
-       depot.appendChild(p);
-       let p2 = document.createElement('p'); // <p></p>
-       p2.textContent='demo';
-       // ajouter la balise dans la balise
-       depot.appendChild(p2);
-
-       async function  go(){
-        let url ='http://127.0.0.1:8000/liste-personne';
-        let response = await fetch(url);
-        let tableau = await response.json();
-        console.log(tableau);
-
-        let depot = document.getElementById('demo');
-       depot.innerHTML='';
-       for ( let personne of tableau){
-         let p = document.createElement('p'); // <p></p>
-        p.innerHTML=personne.prenom +' '+personne.nom ; // <p>test</p>
-        depot.appendChild(p);
-
-       }
-       }
-//------------------------------
- async function  go2(){
-        let url ='http://127.0.0.1:8000/liste-personne';
-        let response = await fetch(url);
-        let tableau = await response.json();
-        let select = document.getElementById('personnes');
-       select.innerHTML='';
-       for ( let personne of tableau){
-         let option = document.createElement('option'); // <option></option>
-        option.innerHTML=personne.prenom +' '+personne.nom ; // <option>test</option>
-        option.setAttribute('value',personne.id);// <option value="1">test</option>
-        select.appendChild(option);
-
-       }
-       }
-
-       //j'apelle ma fonction
-
-
-       go();
-       go2();
-       document.getElementById('personnes').onchange = function(e){
-        console.log(this.value);
-       }
+      // ajouter une balise p
+      // <p>test</p>
+      // <p>demo</p>
+      let depot = document.getElementById('demo')
+      // vider
+      depot.innerHTML = ''
+      // construire la balise <p>
+      let p = document.createElement('p') // <p></p>
+      p.innerHTML = 'test' // <p>test</p>
+      // ajouter la balise dans la balise
+      depot.appendChild(p)
+      let p2 = document.createElement('p') // <p></p>
+      p2.textContent = 'demo'
+      // ajouter la balise dans la balise
+      depot.appendChild(p2)
+      
+      async function go() {
+        let url = 'http://127.0.0.1:8000/liste-personne'
+        let response = await fetch(url)
+        let tableau = await response.json()
+        console.log(tableau)
+      
+        let depot = document.getElementById('demo')
+        depot.innerHTML = ''
+        for (let personne of tableau) {
+          let p = document.createElement('p') // <p></p>
+          p.innerHTML = personne.prenom + ' ' + personne.nom // <p>test</p>
+          depot.appendChild(p)
+        }
+      }
+      //------------------------------
+      async function go2() {
+        let url = 'http://127.0.0.1:8000/liste-personne'
+        let response = await fetch(url)
+        let tableau = await response.json()
+        let select = document.getElementById('personnes')
+        select.innerHTML = ''
+        for (let personne of tableau) {
+          let option = document.createElement('option') // <option></option>
+          option.innerHTML = personne.prenom + ' ' + personne.nom // <option>test</option>
+          option.setAttribute('value', personne.id) // <option value="1">test</option>
+          select.appendChild(option)
+        }
+      }
+      
+      //j'apelle ma fonction
+      
+      go()
+      go2()
+      document.getElementById('personnes').onchange = function (e) {
+        console.log(this.value)
+      }
     </script>
     ```
 
