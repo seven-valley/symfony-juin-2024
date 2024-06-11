@@ -8,9 +8,9 @@ Film
 
 ## les routes
 
- <code>POST</code> <code><b>/</b>api<b>/</b>personne</code>  Ajouter une personne  
-<details>`{"code":"400","message":"Bad Request"}` 
-</details>
+ <code>POST</code> <code><b>/</b>api<b>/</b>personne</code>  Ajouter une personne   `{"code":"400","message":"Bad Request"}` 
+
+
 
 
 ## Méthode POST
