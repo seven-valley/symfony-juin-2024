@@ -37,7 +37,7 @@ __mardi 4 juin__
 - création du fichier twig
 
 # JOUR 3
-__mercredi 5 juin__
+__mercredi 5 juin (juin)__
 ## :mortar_board: TP 04 VIP Cocktail
 - Création de l'Entity Personne
 - Création du controller
@@ -80,6 +80,7 @@ __vendredi 7 juin__
 # Semaine 2
 
 # JOUR 6
+__lundi 10 juin__
 - création d'une relation ManyToMany sur l'entité Category
 - utilisation d'un plugin select 2 pour le menu dans le formulaire 
 
@@ -100,6 +101,7 @@ __vendredi 7 juin__
 - Ajouter une personne de la liste des employées dans une equipe
 
 # JOUR 7
+__mardi 11 juin__
 - mise en place de requete AJAX
 - Utilisation de JavaScript avec twig 
 
@@ -109,7 +111,18 @@ __vendredi 7 juin__
  - Utiliser javaScript sur la balise "select"   
  pour filtrer les cocktail en fct des couleur  
 
+# JOUR 8
+__mercredi 12 juin (matin)__
+- Mise en place d'une API  
+- Créarion des toutes POST - PUT - PATCH - DELETE  
+- axios avec Vanilla Javascrit implémenter les méthode POST - PUT - PATCH - DELETE  
+- Démonstration Liste de film  
 
+## :mortar_board: TP 10 Liste de courses
+- Ajouter un Item  
+- Afficher tous les Items  
+- Enlever un Item  
+- Acheter un Item  
 
 # Semaine 2
 - Mettre en place le **manyToMany** avec le Team Builder  
