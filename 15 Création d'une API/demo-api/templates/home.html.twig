@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <input id="title" placeholder="Titre">
+    <br><br>
+    <input id="annee" placeholder="Titre">
+    <br><br>
+    <button id="btnAjouter">Ajouter</button>
+    <table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Title</th>
+            <th>Annee</th>
+        </tr>
+    </thead>
+    <tbody id="tbody">
+    <!--
+        <tr>
+            <td>The Matrix</td>
+            <td>The Matrix</td>
+            <td>The Matrix</td>
+        </tr>
+    -->
+    </tbody>
+    </table>
+     <template id="ligneTr">
+        <tr data-toto="abc" data-id="42">
+            <td>1</td>
+            <td>The Matrix</td>
+            <td>1999</td>
+            <td>
+                <button class="del">DELETE</button>
+            </td>
+        </tr>
+    </template>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+    let films =[];
+    const url ='http://localhost:8000/api/film';
+    
+    //document.getElementById('btnAjouter').onclick=function (){
+    document.getElementById('btnAjouter').onclick= async()=>{
+        // lecture des champs input
+        const title =  document.getElementById('title').value;
+        document.getElementById('title').value=''; // vider le champ input
+        const annee =  document.getElementById('annee').value;
+        document.getElementById('annee').value=''; // vider
+        const film ={}; // créer un objet
+        film.title =title;
+        film.annee = annee;
+        const response =  await axios.post(url,film);
+        const newFilm = response.data;
+        films.push(newFilm);
+        afficherFilms();
+        //console.log(response.data);
+    }
+    const  afficherFilms=()=>{
+        const tbody = document.getElementById('tbody');
+        tbody.innerHTML =''; // vider le tableau HTML
+        const template = document.getElementById('ligneTr');
+        for (let film of films){
+            // je clone le template
+            const clone = template.content.cloneNode(true);
+            let td = clone.querySelectorAll("td");
+            let tr = clone.querySelector("tr");
+            //tr.setAttribute('data-id',film_id); // ajouter id
+            td[0].textContent = film.id;
+            td[1].textContent = film.title;
+            td[2].textContent = film.annee;
+            let btnDel = clone.querySelector(".del");
+            btnDel.onclick = async (evt)=>{
+                // axios delete
+               // let id =  evt.target.closest('tr').dataset.id
+                let url2 = url +'/' +film.id;
+                const response = await axios.delete(url2);
+                console.log(response.data);
+                loadFilm();
+            }
+            tbody.appendChild(clone);
+        }
+    }
+    // async function loadFilm  (){
+    const loadFilm = async ()=>{
+        const response = await axios.get(url);
+        films = response.data;
+        // afficher le tab js ds le tableau
+        afficherFilms();
+    }
+    loadFilm();
+</script>
+</body>
+</html>
