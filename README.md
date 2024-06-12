@@ -125,6 +125,7 @@ __mercredi 12 juin (matin)__
 - Acheter un Item  
 
 # Semaine 2
+**Objectif "souhaités" ou "éventuels" pour la semaine 2** :grinning:
 - Mettre en place le **manyToMany** avec le Team Builder  
 - Ajouter le plugin **select2** pour un manyToMany  
 - La Validation de formulaire  
@@ -133,6 +134,7 @@ __mercredi 12 juin (matin)__
 - Mettre en place des requetes **AJAX** avec Symfony avec Vanilla JS et fetch  
 - Créer une **API** avec Symfony et la tester avec POSTMAN  
 - Mettre en place React avec Symfony
+- Créer un service avec symfony  
 
 
 
