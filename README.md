@@ -37,7 +37,7 @@ __mardi 4 juin__
 - création du fichier twig
 
 # JOUR 3
-__mercredi 5 juin (juin)__
+__mercredi 5 juin (matin)__
 ## :mortar_board: TP 04 VIP Cocktail
 - Création de l'Entity Personne
 - Création du controller
