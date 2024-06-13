@@ -118,7 +118,14 @@ __mercredi 12 juin (matin)__
 - axios avec Vanilla Javascrit implémenter les méthode POST - PUT - PATCH - DELETE  
 - Démonstration Liste de film  
 
+# JOUR 9
+__jeudi 13 juin__
+- Mise en place de React avec Symfony  
+- Créarion des toutes POST - PUT - PATCH - DELETE  
+- Démonstration Liste de film  
+
 ## :mortar_board: TP 10 Liste de courses
+- Avec React
 - Ajouter un Item  
 - Afficher tous les Items  
 - Enlever un Item  

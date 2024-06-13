@@ -2,6 +2,51 @@
 
 **Mise en place de la liste de course avec React**
 
+## Ajouter Bootstrap au projet React
+ ```
+ npm i react-bootstrap bootstrap
+ ```
+### le catalogue bootstrap
+https://getbootstrap.com/docs/5.3/components/buttons/
+   
+## Ajouter Font Awesome au projet React
+```
+npm install --save-dev @fortawesome/fontawesome-free
+```
+
+### Importer Boostrap et Font  Awesome
+  
+**Main.tsx***  
+  
+```ts
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App.tsx'
+import './index.css'
+
+import 'bootstrap/dist/css/bootstrap.min.css'; // ici 
+import '@fortawesome/fontawesome-free/css/all.min.css'; // ici on ajoute
+
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+)
+```
+
+### le catalogue Font Awesome
+https://fontawesome.com/search
+
+
+## Lancer le projet React
+```
+npm run dev
+```
+
+
+
+  
+
 **App.jsx**
 ```jsx
 import axios from 'axios';
