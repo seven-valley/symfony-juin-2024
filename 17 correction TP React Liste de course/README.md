@@ -7,12 +7,12 @@ ENTITY Item :
 - nom (string)  
 - isBuy (boolean)
 # les routes de l'API
-| Méthode  | path  |Action | body|
-| :--------------- |:---------------:| -----:| -----:|
-| <code>POST</code> | <code><b>/</b>api<b>/</b>item</code> |  Ajouter un film |    `{"nom":"pomme"}`|   
-| <code>GET</code> | <code><b>/</b>api<b>/</b>item</code> | Afficher la liste |   |
-| <code>PATCH</code> | <code><b>/</b>api<b>/</b>item<b>/{id}</b></code> | Modifier un item | |  
-| <code>DELETE</code> | <code><b>/</b>api<b>/</b>item<b>/{id}</b></code> | Effacer un item| |  
+| Méthode  | path  |Action | body| response|
+| :--------------- |:---------------|: -----|: --------------------|: --------------------|
+| <code>POST</code> | <code><b>/</b>api<b>/</b>item</code> |  Ajouter un film |    `{"nom":"pomme"}`|   `{"id":"1","nom":"pomme","buy":"false"}  `|     
+| <code>GET</code> | <code><b>/</b>api<b>/</b>item</code> | Afficher la liste | | `[ {"id":"1","nom":"pomme","buy":"false"}]`    |
+| <code>PATCH</code> | <code><b>/</b>api<b>/</b>item<b>/{id}</b></code> | Modifier un item | |  `[ {"id":"1","nom":"pomme","buy":"true"}]`    | 
+| <code>DELETE</code> | <code><b>/</b>api<b>/</b>item<b>/{id}</b></code> | Effacer un item| |   `[ {"id":"null","nom":"pomme","buy":"true"}]`  | 
 
 ## méthode : POST ajouter un item
 ```php
