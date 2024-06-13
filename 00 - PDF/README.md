@@ -58,4 +58,36 @@ symfony console d:s:u -f
 ```
 symfony console make:form Film
 ```
+# La commande interdite !
+**génère FilmController**
+**Génère les twigs**
+**Génère FilmType (le formulaire)**
+```
+symfony console make:crud Film
+```
+# Authentification
 
+## La creation de l'entité User
+**make:user**
+Générer l'Entity User  
+```
+symfony console make:user
+```
+
+## La page login
+**make:auth**
+Génerer le controller de Login  
+Génerer la page twig de login  
+```
+symfony console make:security
+```
+
+**make:registration-form**  
+```
+symfony console make:registration-form
+```
+
+# pour Résoudre les problèmes de CORS en mode dev
+```
+composer require nelmio/cors-bundle 
+```
