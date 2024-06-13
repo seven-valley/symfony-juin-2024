@@ -9,9 +9,6 @@ ENTITY Item :
 # les routes de l'API
 | Méthode  | path  |Action | body|
 | :--------------- |:---------------:| -----:| -----:|
- Aligné à gauche  |   ce texte        |  Aligné à droite |
-| Aligné à gauche  | est             |   Aligné à droite |
-| Aligné à gauche  | centré          |    Aligné à droite |
 | <code>POST</code> | <code><b>/</b>api<b>/</b>item</code> |  Ajouter un film |    `{"nom":"pomme"}`|   
 | <code>GET</code> | <code><b>/</b>api<b>/</b>item</code> | Afficher la liste |   |
 | <code>PATCH</code> | <code><b>/</b>api<b>/</b>item<b>/{id}</b></code> | Modifier un item | |  
