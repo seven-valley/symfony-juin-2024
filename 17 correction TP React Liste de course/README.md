@@ -113,7 +113,7 @@ export default function TrLigne({ item,modifier,enlever,indice }) {
     e.target.reset();
   }
 ```
-** la vue**
+**la vue**
 ```jsx
         <form method="post" onSubmit={ajouter}>
           <div className="row">
