@@ -102,6 +102,7 @@ __lundi 10 juin__
 
 # JOUR 7
 __mardi 11 juin__
+- les fixures 
 - mise en place de requete AJAX
 - Utilisation de JavaScript avec twig 
 
@@ -130,6 +131,14 @@ __jeudi 13 juin__
 - Afficher tous les Items  
 - Enlever un Item  
 - Acheter un Item  
+
+# JOUR 9
+__vendredi 14 juin__
+## :mortar_board: TP 08 Le Team Builder
+- Mettre le TP Team Builder au format API
+- Front React  
+- Back symfony API  
+- test de l'API avec Post Man  
 
 # Semaine 2
 **Objectifs "souhaités" ou "éventuels" pour la semaine 2** :grinning:
