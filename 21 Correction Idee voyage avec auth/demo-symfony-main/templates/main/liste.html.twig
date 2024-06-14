@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ titre}}{% endblock %}
+
+{% block body %}
+<div class="container">
+<h1>Liste de choses à faire</h1>
+
+
+  
+    {% for category in categories %}
+    <div class="card mb-3" style="width: 18rem;">
+        <div class="card-header">
+            {{category.name}}
+        </div>
+        <ul class="list-group list-group-flush">
+            {% for w in category.wishes %}
+                <li class="list-group-item">
+                <a href="{{path('app_wish_detail',{id:w.id})}}">{{ w.title}}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endfor %}  
+</div>
+{% endblock %}

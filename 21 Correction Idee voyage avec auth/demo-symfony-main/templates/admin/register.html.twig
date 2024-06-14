@@ -1,0 +1,28 @@
+{% extends 'admin.html.twig' %}
+
+{% block title %}Register{% endblock %}
+
+
+{% block body %}
+<div class="container">
+<div class="offset-4 col-4">
+    <h1>Ajouter un utilisateur</h1>
+
+    {{ form_errors(registrationForm) }}
+
+    {{ form_start(registrationForm) }}
+      {{ form_row(registrationForm.prenom) }}
+        {{ form_row(registrationForm.nom) }}
+        {{ form_row(registrationForm.pseudo) }}
+
+        {{ form_row(registrationForm.email) }}
+        {{ form_row(registrationForm.plainPassword, {
+            label: 'Password'
+        }) }}
+       
+
+        <button type="submit" class="btn btn-success my-4">Ajouter</button>
+    {{ form_end(registrationForm) }}
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,66 @@
+{% extends 'admin.html.twig' %}
+
+{% block title %}{{ titre}}{% endblock %}
+
+{% block body %}
+<div class="container">
+<h1>Liste</h1>
+<div class="col-6">
+{% for type, messages in app.session.flashbag.all() %}
+    {% for message in messages %}
+       
+      
+            <div class="alert alert-{{type}}" role="alert">
+            <i class="fa fa-info-circle"></i>
+           &nbsp; {{message}}</div>
+        
+    {% endfor %}
+{% endfor %}
+<table class="table table-striped">
+    <thead>
+    <tr>
+    <th>#</th>
+    <th>Categorie</th>
+    <th>Nom</th>
+    <th>Date</th>
+    <th colspan=2 >Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for w in wishes%}
+        <tr class="{{ w.isPublished== false ? 'table-danger' }}">
+            <td>{{loop.index}}</td>
+             <td><em>{{w.category.name}}</em></td>
+            <td>{{w.title}}</td>
+            <td>{{w.dateCreated|date('d/m/Y')}}</td>
+            <td>
+            <a href="{{path('app_wish_editer',{id: w.id })}}" class="btn btn-primary"> <i class="fa fa-edit"></i></a>
+            </td>
+            <td>
+            <a 
+            onclick="return confirm('delete {{ w.title }} ?')"
+            href="{{path('app_wish_effacer',{id: w.id })}}" class="btn btn-danger"><i class="fa fa-trash"></i></a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<a class="btn btn-success btn-large mb-5" href="{{path('app_wish_ajouter')}}"> <i class="fa fa-plus" ></i> </a>
+<div id="demo">code ici</div>
+</div>
+</div>
+<script>
+async function go (){
+let response = await fetch('http://127.0.0.1:8000/admin/user/liste2');
+let users = await response.json();
+console.log(users);
+for (let u of users){
+    let p = document.createElement('p');
+    p.innerHTML = u.email; // <p>augure@gmail.com<p>
+    document.getElementById('demo').appendChild(p);
+    console.log(u.email);
+}
+}
+go();
+</script>
+{% endblock %}

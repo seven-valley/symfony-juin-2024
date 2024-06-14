@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ titre}}{% endblock %}
+
+{% block body %}
+<div class="container">
+<h1>{{ wish.title}}</h1>
+<strong>{{wish.author}}</strong>
+<em>{{wish.dateCreated|date('d/m/Y')}}</em>
+
+<p>{{ wish.description}} <p>
+</div>
+{% endblock %}
